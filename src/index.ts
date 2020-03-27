@@ -5,7 +5,7 @@ const app = require('express')
 app()
   .set('view engine', 'ejs')
   .set('views', 'views/pages')
-  .use(app.static('static'))
+  .use(app.static('public'))
   // .use(bodyParser.urlencoded({
   //   extended: true
   // }))
