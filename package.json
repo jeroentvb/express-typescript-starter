@@ -11,7 +11,7 @@
     "copy-views-directory": "copyfiles -E -u 2 \"./src/views/**/*\" \"./dist/views/\"",
     "start": "node ./dist/index.js",
     "lint": "tslint -p . -c tslint.json \"**/*.ts\" \"**/*.tsx\"",
-    "watch-server": "ts-node-dev --respawn --transpileOnly src/index.ts",
+    "watch-server": "ts-node-dev --respawn --transpile-only src/index.ts",
     "watch-sass": "node-sass -w src/public/css/styles.scss dist/public/css/styles.css",
     "watch": "concurrently -k -p \"[{name}]\" -n \"Sass,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-server\""
   },
@@ -31,18 +31,18 @@
   },
   "homepage": "https://github.com/jeroentvb/express-starter#readme",
   "dependencies": {
-    "ejs": "^2.7.1",
+    "ejs": "^3.1.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "@types/ejs": "^2.7.0",
-    "@types/express": "^4.17.3",
-    "@types/node": "^12.12.31",
-    "concurrently": "^4.1.2",
-    "copyfiles": "^2.2.0",
-    "node-sass": "^4.13.1",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.8.3"
+    "@types/ejs": "^3.0.5",
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.10",
+    "concurrently": "^5.3.0",
+    "copyfiles": "^2.4.1",
+    "node-sass": "^5.0.0",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.1.2"
   },
   "nodemonConfig": {
     "ignore": [
